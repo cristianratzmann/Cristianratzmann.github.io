@@ -3,7 +3,7 @@ html{
 }
 
 body{
-text-shadow: 2px 2px 7px orange;
+text-shadow: 2px 2px 7px #ccc;
 	background-color: black;
 color: white;
 }
@@ -21,14 +21,14 @@ h1{text-align: center;
 
     width: 300px; height: 300px;
     border-radius: 50%;
-    border: 5px white solid;
+    border: 3px white solid;
     display: block;
     margin: 0 auto;
-    box-shadow: 0 0 15px orange;
+    box-shadow: 0 0 15px lightgray;
 }
 
 .btn{
-	border-radius: 5px;
+	border-radius: 50px;
 	
 	text-decoration: none; /*Retira o sublinhado*/
 
@@ -71,7 +71,7 @@ li{
 
 li a{
 display: block;
-color: blue;
+color: white;
 font-size: 22px;
 background-color: black;
 padding: 14px 39px;
@@ -80,12 +80,12 @@ text-decoration: none;
 
 }
 li a:hover{
-	background-color: #2f4f4f;
+	background-color: #ccc;
 }
 
 .ativo {
 
-	background-color: #2f4f4f;
+	background-color: #ccc;
 	border: 1px solid white;
 	box-sizing: 0 0 3px white;
 }
@@ -101,17 +101,38 @@ text-decoration: none;
 
 table img{
 
+display: block
 width: 80px;
-height: 55px;
+height: 50px;
 
 }
 table	{
-
-	border: 1px solid white;
+   
+   margin: 0 auto;
+	width: 60%;
+	border: 1px solid lightgray;
 border-collapse: collapse;
 }
 table td{
-
-	border: 1px solid white;
+	font-size: 17px;
+	text-align: center;
+	border: 2px solid lightgray;
 
 }
+
+caption	{
+
+	font-size: 22px;
+	border: 1px solid lightgray;
+}
+
+#nome {
+font-size: 18px;
+color: #ccc;
+
+}
+#h1doformulario {
+	text-align: left;
+font-size: 22px;
+color: #ccc;
+
