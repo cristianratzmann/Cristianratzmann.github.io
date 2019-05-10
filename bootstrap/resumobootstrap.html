@@ -1,0 +1,141 @@
+      <!DOCTYPE HTML>
+      <html lang="pt-br">
+        <head>
+          <!-- Required meta tags -->
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+          <!-- Bootstrap CSS -->
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
+
+          <title>Hello, world!</title>
+        </head>
+        <body>
+          <h1>Hello, Bootstrap World!</h1>
+
+          <div class="jumbotron text-center">
+        <h1>Exemplo de Jumbotron</h1>
+        <p>redimensione essa tela para ver o efeito</p> 
+      </div>
+
+
+      <section class="container">
+        <section class="row">
+
+        <article class="col">
+        <h2>Coluna 1</h2>
+        <p class="text-danger">CONTEÚDO COLUNA 1</p>
+
+        <div id="imgX2" class="collapse">
+          <a href="rua.jpg" data-toggle="lightbox">
+          <img class="img-fluid" src="rua.jpg">
+          </a>
+        </div>
+        <button data-target="#imgX2" data-toggle="collapse" type="button" class="btn btn-outline-dark">Abrir Imagem</button>
+
+        </article>
+
+      <article class="col">
+        <h2>Coluna 2</h2>
+        <p class="text-danger">CONTEÚDO COLUNA 2</p>
+         <div id="imgX3" class="collapse">
+          <a href="rua.jpg" data-toggle="lightbox">
+          <img class="img-fluid" src="rua.jpg">
+          </a>
+        </div>
+        <button data-target="#imgX3" data-toggle="collapse" type="button" class="btn btn-outline-dark">Abrir Imagem</button>
+        </article>
+
+        <article class="col">
+        <h2>Coluna 3</h2>
+        <p class="text-danger">CONTEÚDO COLUNA 3</p>
+        <div id="imgX4" class="collapse">
+          <a href="rua.jpg" data-toggle="lightbox">
+          <img class="img-fluid" src="rua.jpg">
+          </a>
+        </div>
+        <button data-target="#imgX4" data-toggle="collapse" type="button" class="btn btn-outline-dark">Abrir Imagem</button>
+        </article>
+
+        </section>
+
+      </section>
+
+      <h2>Imagem em bootstrap</h2>
+
+      <img class="img-fluid" src="rua.jpg">
+
+
+
+      <h2 data-target="#imgX" data-toggle="collapse">Abre e Fecha</h2>
+
+      <div id="imgX" class="collapse">
+
+        <img class="img-fluid" src="rua.jpg">
+
+      </div>
+
+
+
+      <h2>Janela modal</h2>
+
+      <!-- Button to Open the Modal -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+        Excluir dados
+      </button>
+
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Excluir dados</h4>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+
+            <!-- Modal body -->
+            <div class="modal-body">
+              Deseja realmente exluir os dados?
+            </div>
+
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <h2>Exemplo de lightbox</h2>
+
+      <a href="https://unsplash.it/1200/768.jpg?image=251" data-toggle="lightbox">
+                      <img src="https://unsplash.it/600.jpg?image=251" class="img-fluid">
+                  </a>
+      <!-- Fading modal -->
+      <div class="modal fade"></div>
+
+
+
+
+          <!-- Optional JavaScript -->
+          <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+          <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.js"></script>
+
+          <script type="text/javascript">
+            $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                      event.preventDefault();
+                      $(this).ekkoLightbox();
+                  });
+
+          </script>
+        </body>
+      </html>
